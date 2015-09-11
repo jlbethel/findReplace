@@ -10,13 +10,15 @@ var findReplace = function(string, replaceWord, newWord) {
 };
 
 $(document).ready(function() {
-  $("form#findReplace").submit(function(event) {
-    var string = ("input#string").val();
-    var replaceWord = ("input#replaceWord").val();
-    var newWord = ("input#newWord").val();
+  $("form#userInput").submit(function(event) {
+    var string = $("input#string").val();
+    var replaceWord = $("input#replaceWord").val();
+    var newWord = $("input#newWord").val();
+    var result = findReplace(string, replaceWord, newWord);
 
     $("#result").text(result);
-    $("#results").show();  
+    // $("#results").show();
     event.preventDefault();
   });
+  debugger;
 });

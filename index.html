@@ -10,17 +10,21 @@
     <div class="container">
       <h1>Find and Replace!</h1>
 
-      <form id="find_replace">
+      <form id="userInput">
         <div class="form-group">
           <input id="string" name="string" type="text" class="form-control" placeholder="Enter the string to be searched" required>
-          <input id="replaceWord" name="replaceWord" type="text" class="form-control" placeholder="Enter the word to be replaced" required>
-          <input id="newWord" name="newWord" type="text" class="form-control" placeholder="Enter the replacement word" required>
-          <button type="submit" class="btn btn-primary">Replace!</button>
         </div>
+        <div class="form-group">
+          <input id="replaceWord" name="replaceWord" type="text" class="form-control" placeholder="Enter the word to be replaced" required>
+        </div>
+        <div class="form-group">
+          <input id="newWord" name="newWord" type="text" class="form-control" placeholder="Enter the replacement word" required>
+        </div>
+          <button type="submit" class="btn btn-primary">Replace!</button>
       </form>
 
       <div id="results">
-        <p>Your new string is: <span id="result"></span></p>
+        <p>Here are your results: <span id="result"></span></p>
       </div>
     </div>
   </body>
