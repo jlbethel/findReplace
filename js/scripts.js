@@ -1,6 +1,6 @@
 var findReplace = function(string, replaceWord, newWord) {
 
-  var replaceWords = new RegExp(replaceWord,"g");
+  var replaceWords = new RegExp(replaceWord,"gi");
   var newString = '';
   if(string.indexOf(replaceWord) != -1) {
     // newString += replaceWord+ ' does occur in your string';

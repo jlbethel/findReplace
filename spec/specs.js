@@ -19,4 +19,8 @@ describe('findReplace', function() {
   it("will look for a word in a user's string, will find multiple instances of it, ane replace them all with the user's chosen word", function () {
     expect(findReplace('the dog met the other dog and wagged her tail', 'dog', 'cat')).to.equal('the cat met the other cat and wagged her tail');
   });
+
+  it("will ignore case", function() {
+    expect(findReplace('The Dog met the other dog and wagged her tail', 'dog', 'cat')).to.equal('The cat met the other cat and wagged her tail');
+  });
 });
