@@ -21,6 +21,9 @@ describe('findReplace', function() {
   });
 
   it("will ignore case", function() {
-    expect(findReplace('The Dog met the other dog and wagged her tail', 'dog', 'cat')).to.equal('The cat met the other cat and wagged her tail');
+    expect(findReplace('The Dog met the other dog and wagged her tail.', 'dog', 'cat')).to.equal('The cat met the other cat and wagged her tail.');
+  });
+  it("will ignore punctuation", function() {
+    expect(findReplace('The dog is a dog.', 'dog', 'cat')).to.equal('The cat is a cat.');
   });
 });
