@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Find Replace</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Find and Replace!</h1>
+
+      <form id="find_replace">
+        <div class="form-group">
+          <input id="string" name="string" type="text" class="form-control" placeholder="Enter the string to be searched" required>
+          <input id="replaceWord" name="replaceWord" type="text" class="form-control" placeholder="Enter the word to be replaced" required>
+          <input id="newWord" name="newWord" type="text" class="form-control" placeholder="Enter the replacement word" required>
+          <button type="submit" class="btn btn-primary">Replace!</button>
+        </div>
+      </form>
+
+      <div class="results">
+        <p>Your new string is: <span id="result"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
