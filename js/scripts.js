@@ -7,4 +7,16 @@ var findReplace = function(string, replaceWord, newWord) {
     newString = string.replace(replaceWords, newWord);
   } else{ newString += replaceWord + ' does not occur in your string'}
   return newString;
-}
+};
+
+$(document).ready(function() {
+  $("form#findReplace").submit(function(event) {
+    var string = ("input#string").val();
+    var replaceWord = ("input#replaceWord").val();
+    var newWord = ("input#newWord").val();
+
+    $("#result").text(result);
+    $("#results").show();  
+    event.preventDefault();
+  });
+});
