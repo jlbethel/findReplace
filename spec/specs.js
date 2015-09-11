@@ -9,6 +9,6 @@ describe('findReplace', function() {
   });
 
   it("will look for a word in the user's string, find that it does not occur, and return appropriate response", function () {
-    expect(findReplace('the dog', 'cat')).to.equal('cate does not occur in your string');
+    expect(findReplace('the dog', 'cat')).to.equal('cat does not occur in your string');
   });
 });
