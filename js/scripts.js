@@ -5,6 +5,6 @@ var findReplace = function(string, subString) {
 
   if(searchString.indexOf(subString) != -1) {
     output += replaceWord + ' does occur in your string';
-  }
+  } else{ output += replaceWord + ' does not occur in your string'}
   return output;
 }
