@@ -12,6 +12,8 @@ A site that allows a user to enter a string, a word to search for in the string 
 1. Clone repository from GitHub (to put on the desktop in terminal run ```cd ~/Desktop```, then run ```git clone https://github.com/jlbethel/findReplace.git```).
 2. Open the ```findReplace``` directory and then open ```index.html```.
 
+##Technologies Used
+
 JavaScript, jQuery, html, css. Testing done with Mocha and Chai.
 
 ###Legal
