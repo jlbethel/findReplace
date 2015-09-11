@@ -1,13 +1,10 @@
 var findReplace = function(string, replaceWord, newWord) {
 
-  var output = '';
+  var replaceWords = new RegExp(replaceWord,"g");
   var newString = '';
-
   if(string.indexOf(replaceWord) != -1) {
-    // output += replaceWord+ ' does occur in your string';
-    newString = string.replace(replaceWord, newWord);
+    // newString += replaceWord+ ' does occur in your string';
+    newString = string.replace(replaceWords, newWord);
   } else{ newString += replaceWord + ' does not occur in your string'}
   return newString;
-  // return newString;
-
 }
